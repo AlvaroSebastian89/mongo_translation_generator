@@ -1,0 +1,45 @@
+development:
+  clients:
+    default:
+      database: db_integrator
+      hosts:
+       - imaginex-developer-shard-00-00-ue0if.mongodb.net:27017
+       - imaginex-developer-shard-00-01-ue0if.mongodb.net:27017
+       - imaginex-developer-shard-00-02-ue0if.mongodb.net:27017
+      options:
+        user: test
+        password: Bsale-2019
+        auth_source: admin
+        ssl: true
+
+production:
+  clients:
+    # Defines the default client. (required)
+    default:
+      # Defines the name of the default database that Mongoid can connect to.
+      # (required).
+      database: db_integrator
+
+      # Provides the hosts the default client can connect to. Must be an array
+      # of host:port pairs. (required)
+      hosts:
+        - dtecluster-shard-00-00-xjqut.mongodb.net:27017
+        - dtecluster-shard-00-01-xjqut.mongodb.net:27017
+        - dtecluster-shard-00-02-xjqut.mongodb.net:27017
+      options:
+        # The name of the user for authentication.
+        user: imasale
+
+        # The password of the user for authentication.
+        password: imasale
+
+        # The name of the replica set to connect to. Servers provided as seeds that do
+        # not belong to this replica set will be ignored.
+        replica_set: DteCluster-shard-0
+
+        # The database or source to authenticate the user against. If the database
+        # specified above is not admin, admin MUST be specified here.
+        auth_source: admin
+
+        # All Atlas servers use SSL. (default: false)
+        ssl: true

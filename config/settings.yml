@@ -1,0 +1,15 @@
+development:
+  bway_api: "http://ec2-54-183-147-121.us-west-1.compute.amazonaws.com:8080/v1"
+  notify_track_url: "http://ec2-54-183-186-35.us-west-1.compute.amazonaws.com:4545"
+  bshipping_courier_api: http://54.176.95.48:9291
+  # chilexpress_api: https://testservices.wschilexpress.com
+  # chilexpress_token: 9d6492ccc8b44a668846d2e9ede80bf6
+  chilexpress_api: https://services.wschilexpress.com
+  chilexpress_token: db0b7d8b74454acab612706de5812eb5
+
+production:
+  bway_api: http://api.bway.com/v1
+  notify_track_url: 'http://track-api.bhelp.cl'
+  bshipping_courier_api: http://bshipping-courier.api.bsale.com
+  chilexpress_api: https://services.wschilexpress.com
+  chilexpress_token: db0b7d8b74454acab612706de5812eb5
